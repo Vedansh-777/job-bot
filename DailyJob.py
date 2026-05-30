@@ -11,7 +11,6 @@ from email.mime.text import MIMEText
 from datetime import datetime
 import requests
 import os
-import schedule
 import time
 import json
 import logging
@@ -394,8 +393,3 @@ if __name__ == "__main__":
     logging.info("🚀 Starting Job Bot...")
     job_runner()
 
-    # =========================
-    # SCHEDULER (RUN DAILY)
-    # =========================
-    schedule.every().day.at("10:00").do(job_runner)
-    logging.info("🚀 Job bot started... (will run daily at 10:00)")
