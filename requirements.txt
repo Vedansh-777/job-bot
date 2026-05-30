@@ -1,1 +1,5 @@
 requests
+pandas
+python-jobspy
+beautifulsoup4
+lxml
